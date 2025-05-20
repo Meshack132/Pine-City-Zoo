@@ -1,0 +1,235 @@
+/* ============ Reset + Base ============ */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ============ Header ============ */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: url('images/wood-bg.png') repeat-x;
+    z-index: 500;
+}
+#header img {
+    display: block;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+}
+
+/* ============ Top Tabs ============ */
+#tabs-top {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: darkgreen;
+    z-index: 500;
+    display: flex;
+}
+#tabs-top a {
+    flex: 1;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+#tabs-top a:hover {
+    background: #006400;
+}
+
+/* ============ Bottom Tabs ============ */
+#tabs-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: forestgreen;
+    z-index: 500;
+    display: flex;
+}
+#tabs-bottom a {
+    flex: 1;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+#tabs-bottom a:hover {
+    background: #228B22;
+}
+
+/* ============ Main Sections ============ */
+#main-home,
+#main,
+#main-animal,
+#main-places,
+#main-weather,
+#main-feedback {
+    margin-top: 120px;
+    margin-bottom: 40px;
+    padding: 20px;
+    min-height: calc(100vh - 160px);
+}
+.map-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* ============ Info Boxes ============ */
+a.info-box {
+    display: block;
+    width: 90%;
+    margin: 12px auto;
+    padding: 15px;
+    text-decoration: none;
+    background: rgba(255, 225, 55, 0.8);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+a.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.info-box img {
+    height: 70px;
+    margin: 10px;
+    float: left;
+    border-radius: 4px;
+}
+.info-box h3 {
+    margin: 0;
+    padding: 0;
+    color: #572800;
+    font-size: 1.2em;
+}
+.info-box p {
+    margin: 5px 0 0 0;
+    color: #131313;
+}
+.info-box img.right {
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/* ============ Full Info Box ============ */
+#info-box-full {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+#info-box-full img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+#info-box-full h3 {
+    text-align: center;
+    color: darkgreen;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* ============ Weather Icons ============ */
+img.info-box-weather-icon {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    float: left;
+}
+h1.info-box-weather-icon {
+    font-size: 65px;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+/* ============ Tables ============ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* ============ Forms ============ */
+input,
+textarea,
+button {
+    width: 100%;
+    margin: 12px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+.button {
+    background: forestgreen;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 0;
+    margin: 12px 0;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.button:hover {
+    background: #006400;
+}
+
+/* ============ Utility ============ */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #info-box-full, a.info-box {
+        width: 95%;
+    }
+    .info-box img {
+        height: 50px;
+    }
+}

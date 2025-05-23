@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
+    <script src="weatherWidget.js" defer></script>
 </head>
 
 <body>
@@ -19,62 +20,8 @@
 
     <div id="main">
         <div id="content">
-            <div class="info-box-full">
-                <h3>PINE CITY WEATHER</h3>
-                <p><img class="info-box-weather-icon" src="Images/partly-cloudy.png" alt="Partly Cloudy"> Partly Cloudy</p>
-                <p>&uarr; 25&deg; &darr; 16&deg;</p>
-                <h1 class="info-box-weather-icon">22&deg;</h1>
-
-                <p><strong>FORECAST</strong></p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Condition</th>
-                            <th>High</th>
-                            <th>Low</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Tuesday</td>
-                            <td><img class="info-box-weather-icon" src="Images/sunny.png" alt="Sunny"></td>
-                            <td>&uarr;28&deg;</td>
-                            <td>&darr;17&deg;</td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td><img class="info-box-weather-icon" src="Images/partly-cloudy.png" alt="Partly Cloudy"></td>
-                            <td>&uarr;28&deg;</td>
-                            <td>&darr;15&deg;</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td><img class="info-box-weather-icon" src="Images/rain.png" alt="Rain"></td>
-                            <td>&uarr;28&deg;</td>
-                            <td>&darr;17&deg;</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td><img class="info-box-weather-icon" src="Images/sunny.png" alt="Sunny"></td>
-                            <td>&uarr;29&deg;</td>
-                            <td>&darr;15&deg;</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td><img class="info-box-weather-icon" src="Images/sunny.png" alt="Sunny"></td>
-                            <td>&uarr;30&deg;</td>
-                            <td>&darr;17&deg;</td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td><img class="info-box-weather-icon" src="Images/sunny.png" alt="Sunny"></td>
-                            <td>&uarr;28&deg;</td>
-                            <td>&darr;16&deg;</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <!-- 🔁 This is where real-time weather will appear -->
+            <div id="weather-widget" class="info-box-full"></div>
         </div>
     </div>
 
